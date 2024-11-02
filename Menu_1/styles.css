@@ -1,0 +1,212 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y estilo general */
+
+
+header h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.item-info {
+    max-width: 70%;
+}
+
+.item-info h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.item-info p {
+    font-size: 14px;
+    color: #999; /* Descripciones en gris */
+}
+
+.price {
+    font-size: 16px;
+    color: #333; /* Precio en negro */
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .menu-item {
+        flex-direction: column; /* Alinea elementos verticalmente en móviles */
+        align-items: flex-start; /* Alinea a la izquierda */
+    }
+
+    .item-info {
+        max-width: 100%; /* Ancho completo en móviles */
+    }
+
+    .price {
+        font-size: 14px; /* Ajusta el tamaño del precio */
+    }
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+.back-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+section {
+    padding: 20px;
+}
+
+
+.price {
+    margin-left: auto; /* Alinea el precio a la derecha */
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.menu-link a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu-link a:hover {
+    background-color: #eee; /* Fondo claro al pasar el ratón */
+    border-radius: 5px;
+}
+
+
+/* Estilos cabecera  */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 100%;
+
+}
+
+.cabeceraGrande {
+    display: flex;
+    justify-content: center; /* Centra el contenido del header */
+    align-items: center; /* Alinea verticalmente el contenido */
+    width: 60%;
+    height: 100%;
+
+}
+
+.cabecera1 {
+    flex: 1; /* Permite que este div use el espacio disponible */
+    width: 80%;
+}
+
+.cabecera2 {
+    text-align: center; /* Centra el texto del título */
+    flex: 1; /* Permite que este div use el espacio disponible */
+    text-align: center;
+
+    width: 80%;
+    height: 100%;
+    
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    .cabeceraGrande {
+        flex-direction: row; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea todos los elementos al inicio */
+        width: 65%;
+    }
+
+    .cabecera1 {
+        width: 100%; /* Hace que el botón ocupe todo el ancho */
+        text-align: left; /* Asegura que el texto se alinee a la izquierda */
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .cabecera2 {
+        width: 100%; /* Hace que el título ocupe todo el ancho */
+        margin-top: 10px; /* Espacio entre el botón y el título */
+    }
+
+    .back-button {
+        width: auto; /* Ajusta el ancho del botón */
+        margin-bottom: 10px; /* Espacio debajo del botón en móviles */
+    }
+
+    h1 {
+        font-size: 24px; /* Ajusta el tamaño del título para móviles */
+    }
+}
+
+
+
+

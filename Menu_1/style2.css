@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y estilo general */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #f7f3e9; /* Beige claro */
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.item-info {
+    max-width: 70%;
+}
+
+.item-info h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.item-info p {
+    font-size: 14px;
+    color: #999; /* Descripciones en gris */
+}
+
+.price {
+    font-size: 16px;
+    color: #333; /* Precio en negro */
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .menu-item {
+        flex-direction: column; /* Alinea elementos verticalmente en móviles */
+        align-items: flex-start; /* Alinea a la izquierda */
+    }
+
+    .item-info {
+        max-width: 100%; /* Ancho completo en móviles */
+    }
+
+    .price {
+        font-size: 14px; /* Ajusta el tamaño del precio */
+    }
+}
